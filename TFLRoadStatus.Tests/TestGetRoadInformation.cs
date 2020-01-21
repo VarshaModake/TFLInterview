@@ -19,8 +19,8 @@ namespace TFLRoadStatus.Tests
         {
             _configurationManager = new Mock<IConfigurationWrapper>();
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-            _configurationManager.Setup(cm => cm.GetValue("app_Id")).Returns("6a9443be");
-            _configurationManager.Setup(cm => cm.GetValue("app_Key")).Returns("a8a924e6ff54cca17e5318efc891f197");
+            _configurationManager.Setup(cm => cm.GetValue("app_Id")).Returns("");
+            _configurationManager.Setup(cm => cm.GetValue("app_Key")).Returns("");
             _configurationManager.Setup(cm => cm.GetValue("Url")).Returns("https://api.tfl.gov.uk/Road/");
 
         }
